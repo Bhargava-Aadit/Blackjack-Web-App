@@ -1,0 +1,107 @@
+body {
+	background: black;
+	color: lightgrey;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.flex-box-container-1,
+.flex-box-container-3,
+.flex-blackjack-row-3 {
+	display: flex;
+	padding: 10px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.flex-box-container-1 div {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+}
+
+.flex-box-container-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.flex-box-container-2 img {
+	border: 2px solid black;
+	margin: 5px;
+	box-shadow: 5px 10px 10px rgb(0 0 0 / 0.6);
+}
+
+.flex-box-container-3 img:hover {
+	box-shadow: 5px 5px 5px lightgrey;
+}
+
+.flex-box-container-4 {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2 {
+	display: flex;
+	padding: 10px;
+	justify-content: space-around;
+	background: url("https://media.istockphoto.com/vectors/poker-table-background-in-green-color-vector-id1206505233?k=6&m=1206505233&s=612x612&w=0&h=3yK8zXZmrh3-tRVtw0wY-AiTTwnqFf_mmNlIGAjlr4E=")
+		center;
+	color: ivory;
+}
+
+.flex-blackjack-row-1 div {
+	padding: 10px;
+	text-align: center;
+}
+#your-box,
+#dealer-box {
+	height: 60vh;
+	width: 50%;
+}
+#yourCards,
+#opponentsCards {
+	height: 90%;
+	justify-content: center;
+	position: relative;
+}
+table,
+th,
+td {
+	color: lightgrey;
+	padding: 5px;
+	border: 1px solid lightgrey;
+	text-align: center;
+}
+.flex-blackjack-row-2 button {
+	margin: 5px;
+}
+
+#cardImageId {
+	position: relative;
+	background-color: white;
+}
+
+button {
+	z-index: 1;
+}
+
+@media screen and (min-width: 476px) {
+	#cardImageId {
+		position: static;
+	}
+}
